@@ -60,7 +60,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          # tags: yourdockerhubuser/repo:sha and :latest
+           tags: maheshduwal/task1:latest
           tags: |
             ${{ secrets.DOCKERHUB_USERNAME }}/nodjs-demo-app:${{ github.sha }}
             ${{ secrets.DOCKERHUB_USERNAME }}/nodjs-demo-app:latest
