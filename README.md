@@ -11,7 +11,8 @@ Simple-nodejs-app is a simple web application created using [Node.js](https://gi
 
 - After installation, run ```npm install``` to download and install all the required dependencies.
 - Run ```npm start``` to run the web application.
+## CICD
 
-## Live Preview
-
-To view a live preview of this application, click [here](https://desolate-coast-53201.herokuapp.com/)
+- created main.yml file in actions tab .
+- written cicd pipeline : created test - build - push stages and setup secrets .
+- trigger in push on main is done.
