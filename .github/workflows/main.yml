@@ -65,5 +65,5 @@ jobs:
             ${{ secrets.DOCKERHUB_USERNAME }}/task1:${{ github.sha }}
             ${{ secrets.DOCKERHUB_USERNAME }}/task1:latest
           # enable remote registry cache to speed up subsequent builds
-          cache-from: type=registry,ref=${{ secrets.DOCKERHUB_USERNAME }}/nodjs-demo-app:cache
-          cache-to: type=registry,ref=${{ secrets.DOCKERHUB_USERNAME }}/nodjs-demo-app:cache,mode=max
+          cache-from: type=registry,ref=${{ secrets.DOCKERHUB_USERNAME }}/task1:cache
+          cache-to: type=registry,ref=${{ secrets.DOCKERHUB_USERNAME }}/task1:cache,mode=max
